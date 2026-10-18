@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/* --- Coluna Esquerda --- */
+.col-image {
+    text-align: center;
+}
+
+.logo-area {
+    margin-bottom: 1rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.logo-area img {
+    max-width: 90px;
+    height: auto;
+}
+
+.nome-app {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.app {
+    color: #2B58BC;
+}
+
+.app-banner {
+    margin-top: 1.2rem;
+}
+
+.app-banner img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Coluna Direita --- */
+.col-text {
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+    color: #1a365d;
+    line-height: 1.3;
+}
+
+.descricao {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.9rem 2.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.info {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* --- Responsivo Celular --- */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .col-text {
+        text-align: center;
+    }
+
+    .logo-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nome-app {
+        font-size: 1.4rem;
+    }
+
+    .app-banner img {
+        max-width: 180px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .btn-download {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
