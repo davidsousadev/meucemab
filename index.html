@@ -1,51 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEMAB App — Baixar Aplicativo</title>
+    <meta name="description" content="CEMAB App - Aplicativo de acompanhamento escolar do Centro Educa Mais Anna Bernardes.">
+    <title>CEMAB App - Baixar Aplicativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <div class="content-grid">
-            <!-- COLUNA ESQUERDA: Logo + Nome CEMAB App + Imagem -->
-            <div class="col-image">
-                <div class="logo-area">
-                    <div class="logo-wrapper">
-                        <img src="logo.png" alt="Logo da Escola">
-                        <span class="nome-app">CEMAB <span class="app">App</span></span>
-                    </div>
-                </div>
-
-                <div class="app-banner">
-                    <img src="app.png" alt="Tela do aplicativo">
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="logo.png" alt="Logo CEMAB">
+                <div>
+                    <strong>CEMAB <span>App</span></strong>
+                    <small>Centro Educa Mais Anna Bernardes</small>
                 </div>
             </div>
-
-            <!-- COLUNA DIREITA: Texto + Botão + Info -->
-            <div class="col-text">
-                <h1>Aplicativo de Acompanhamento Escolar</h1>
-
-                <p class="descricao">
-                    Receba alertas de frequência, acompanhe a frequência do aluno e fique por dentro de tudo de forma
-                    rápida e segura.
-                </p>
-
-                <a href="download/cemabapp.apk" class="btn-download">
-                    Baixar Aplicativo
-                </a>
-
-                <p class="info">
-                    Arquivo seguro • Versão 1.2.1 • Para Android<br>
-                    Desenvolvido por David Sousa da Silva e alunos do Curso Técnico em Informática para Internet
-                </p>
-            </div>
+            <nav class="header-nav">
+                <a href="#recursos">Recursos</a>
+                <a href="#instalacao">Instalação</a>
+                <a href="#versoes">Versões</a>
+                <a href="#download" class="btn btn-primary btn-sm">Baixar</a>
+            </nav>
         </div>
-    </div>
-</body>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="badge">Versão 1.2.4 • Android</span>
+                    <h1>Acompanhe a vida escolar do seu filho em tempo real</h1>
+                    <p>Receba alertas de frequência, avisos da escola e comunique-se com a equipe pedagógica de forma rápida e segura.</p>
+                    <div class="hero-actions">
+                        <a href="download/cemabapp.apk" class="btn btn-primary" id="downloadButton">⬇ Baixar aplicativo</a>
+                        <a href="#instalacao" class="btn btn-ghost">Como instalar</a>
+                    </div>
+                    <ul class="hero-stats">
+                        <li><strong>100%</strong><span>gratuito</span></li>
+                        <li><strong>Push</strong><span>notificações FCM</span></li>
+                        <li><strong>Offline</strong><span>histórico local</span></li>
+                    </ul>
+                </div>
+                <div class="hero-image">
+                    <img src="app.png" alt="Tela do aplicativo CEMAB">
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">RECURSOS</span>
+                    <h2>Tudo o que a família precisa</h2>
+                    <p>Um canal direto entre escola e responsáveis, pensado para o dia a dia.</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Notificações de falta</h3>
+                        <p>Alertas automáticos quando o aluno não registra passagem no leitor facial.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">👨‍👩‍👧</div>
+                        <h3>Múltiplos filhos</h3>
+                        <p>Vincule irmãos ao mesmo dispositivo e acompanhe todos em um só lugar.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Avisos personalizados</h3>
+                        <p>Comunicados da escola entregues diretamente no celular do responsável.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Termos e privacidade</h3>
+                        <p>Aceite explícito dos Termos de Uso antes do vínculo do aluno.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">📶</div>
+                        <h3>Histórico offline</h3>
+                        <p>Últimas notificações armazenadas no dispositivo para consulta a qualquer momento.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">⬆</div>
+                        <h3>Atualização por APK</h3>
+                        <p>Banner automático quando uma nova versão estiver disponível para download.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalacao" class="section section-alt">
+            <div class="container install-grid">
+                <div>
+                    <span class="eyebrow">INSTALAÇÃO</span>
+                    <h2>Como instalar no Android</h2>
+                    <ol class="steps">
+                        <li><span>1</span> Toque em <strong>Baixar aplicativo</strong> e aguarde o download do arquivo <code>.apk</code>.</li>
+                        <li><span>2</span> Abra o arquivo baixado e permita a instalação de fontes desconhecidas, se solicitado.</li>
+                        <li><span>3</span> Conclua a instalação e abra o <strong>CEMAB App</strong>.</li>
+                        <li><span>4</span> Vincule o aluno informando matrícula e nome completo conforme o cadastro escolar.</li>
+                    </ol>
+                </div>
+                <div class="install-card">
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Android 7.0 ou superior</li>
+                        <li>Conexão com a internet</li>
+                        <li>Notificações habilitadas</li>
+                        <li>Cadastro do aluno na escola</li>
+                    </ul>
+                    <a href="download/cemabapp.apk" class="btn btn-primary btn-block">⬇ Baixar APK (15 MB)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="versoes" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">CHANGELOG</span>
+                    <h2>Notas de versão</h2>
+                    <p>Histórico de atualizações do CEMAB App.</p>
+                </div>
+                <div class="versions">
+                    <article class="version-card">
+                        <header><h3>Versão 1.2.4</h3><span class="version-tag">atual</span></header>
+                        <ul>
+                            <li>Créditos corrigidos para Timon - MA.</li>
+                            <li>Ícone regenerado em alta resolução.</li>
+                            <li>Timeout nas requisições HTTP e CSP adicionado.</li>
+                            <li>Suporte visual a múltiplos alunos vinculados.</li>
+                            <li>Notas de versão organizadas por release.</li>
+                        </ul>
+                    </article>
+                    <article class="version-card">
+                        <header><h3>Versão 1.2.2</h3></header>
+                        <ul>
+                            <li>Ajuste de créditos (Timon - MA).</li>
+                            <li>Melhoria da qualidade do ícone.</li>
+                        </ul>
+                    </article>
+                    <article class="version-card">
+                        <header><h3>Versão 1.2.1</h3></header>
+                        <ul>
+                            <li>Alinhamento de versão em config.xml, package.json e config.js.</li>
+                            <li>Melhorias de segurança e remoção de segredos.</li>
+                            <li>Testes automatizados (smoke) e CSP.</li>
+                        </ul>
+                    </article>
+                    <article class="version-card">
+                        <header><h3>Versão 1.2.0</h3></header>
+                        <ul>
+                            <li>Persistência de notificações (SQLite/localStorage).</li>
+                            <li>Verificador de atualização por APK.</li>
+                            <li>Modal de Termos de Uso.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>CEMAB App • Comunicação entre escola e família</p>
+            <p>Desenvolvido por David Sousa da Silva e alunos do Curso Técnico em Informática para Internet.</p>
+            <p class="footer-small">Arquivo seguro • Versão 1.2.4 • Para Android</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
